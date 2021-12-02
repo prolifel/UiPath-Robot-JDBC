@@ -1,0 +1,183 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1400,2884" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:nj="clr-namespace:Newtonsoft.Json;assembly=Newtonsoft.Json" xmlns:p="clr-namespace:XmlDataConversion;assembly=XmlDataConversion" xmlns:p1="http://schemas.uipath.com/workflow/activities/java" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:sxs="clr-namespace:System.Xml.Serialization;assembly=System.Xml" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uja="clr-namespace:UiPath.Java.Activities;assembly=UiPath.Java.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Java.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Java</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>XmlDataConversion</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="72">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Java.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Java</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>XmlDataConversion</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="452,2819" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;jdbc started&quot;]" />
+    <uja:JavaScope JavaPath="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Java Scope" sap:VirtualizedContainerService.HintSize="410,2465" sap2010:WorkflowViewState.IdRef="JavaScope_2">
+      <uja:JavaScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="JavaInvokerProperty" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2429" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="p1:JavaObject" Name="connectionInstance" />
+              <Variable x:TypeArguments="x:Object" Name="connectionInstanceVB" />
+              <Variable x:TypeArguments="nj:JsonObjectAttribute" Name="queryResultJSON" />
+              <Variable x:TypeArguments="p1:JavaObject" Name="queryResultJava" />
+              <Variable x:TypeArguments="x:Object" Name="queryResult" />
+              <Variable x:TypeArguments="x:String" Name="queryResultString" />
+              <Variable x:TypeArguments="x:String" Name="stringQueryResult" />
+              <Variable x:TypeArguments="x:String" Name="xmlQueryResult" />
+              <Variable x:TypeArguments="sd:DataTable" Name="DTQueryResult" />
+              <Variable x:TypeArguments="x:String" Name="DTQueryResultString" />
+              <Variable x:TypeArguments="sxs:XmlSerializer" Name="queryResultXML" />
+              <Variable x:TypeArguments="si:StringWriter" Default="[New IO.StringWriter]" Name="stringWriter" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;load jar&quot;]" />
+            <uja:LoadJar DisplayName="Load Jar" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="LoadJar_2" JarPath="jdbcTest.jar" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;make connectionInstance&quot;]" />
+            <uja:InvokeJavaMethod ParametersList="{x:Null}" TargetObject="{x:Null}" sap2010:Annotation.AnnotationText="param:&#xD;&#xA;in | string | full_path_env (string var or hardcoded)" DisplayName="Invoke uipathCreateConnection()" sap:VirtualizedContainerService.HintSize="334,162" sap2010:WorkflowViewState.IdRef="InvokeJavaMethod_5" MethodName="uipathCreateConnection" Result="[connectionInstance]" TargetType="uipath.java.Query">
+              <uja:InvokeJavaMethod.Parameters>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <InArgument x:TypeArguments="x:String">C:\Users\cleme\Documents\UiPath\Java-JDBC\.env</InArgument>
+                </scg:List>
+              </uja:InvokeJavaMethod.Parameters>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uja:InvokeJavaMethod>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;run select query&quot;]" />
+            <uja:InvokeJavaMethod ParametersList="{x:Null}" TargetObject="{x:Null}" sap2010:Annotation.AnnotationText="param:&#xD;&#xA;in | object | connectionInstance&#xD;&#xA;in | string | select_query (string var, or hardcoded)" DisplayName="Invoke uipathSelectQueryDocument()" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="InvokeJavaMethod_6" MethodName="uipathSelectQueryDocument" Result="[queryResultJava]" TargetType="uipath.java.Query">
+              <uja:InvokeJavaMethod.Parameters>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <InArgument x:TypeArguments="x:Object">[connectionInstance]</InArgument>
+                  <InArgument x:TypeArguments="x:String">select * from regions</InArgument>
+                </scg:List>
+              </uja:InvokeJavaMethod.Parameters>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uja:InvokeJavaMethod>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;close connectionInstance&quot;]" />
+            <uja:InvokeJavaMethod ParametersList="{x:Null}" Result="{x:Null}" TargetObject="{x:Null}" sap2010:Annotation.AnnotationText="param:&#xD;&#xA;in | object | connectionInstance" DisplayName="Invoke Java Method" sap:VirtualizedContainerService.HintSize="334,162" sap2010:WorkflowViewState.IdRef="InvokeJavaMethod_7" MethodName="closeConnection" TargetType="uipath.java.Query">
+              <uja:InvokeJavaMethod.Parameters>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <InArgument x:TypeArguments="x:Object">
+                    <mva:VisualBasicValue x:TypeArguments="x:Object" ExpressionText="connectionInstance" />
+                  </InArgument>
+                </scg:List>
+              </uja:InvokeJavaMethod.Parameters>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uja:InvokeJavaMethod>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;convert javaObject to object&quot;]" />
+            <uja:ConvertJavaObject x:TypeArguments="x:Object" DisplayName="Convert Java Object" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ConvertJavaObject`1_9" JavaObject="[queryResultJava]" Result="[queryResult]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;convert object to string&quot;]" />
+            <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[stringQueryResult]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Convert.ToString(queryResult)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;convert string to DT&quot;]" />
+            <p:XmlToDataTable InputXmlFilePath="{x:Null}" DisplayName="Xml to data table" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="XmlToDataTable_1" InputXmlString="[stringQueryResult]" OutputDataTable="[DTQueryResult]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;write range to excel file&quot;]" />
+            <ui:WriteRange AddHeaders="True" DataTable="[DTQueryResult]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="queryResult.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uja:JavaScope.Body>
+    </uja:JavaScope>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;jdbc finished&quot;]" />
+  </Sequence>
+</Activity>
